@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day and Night Image Brightness</title>
+    <style>
+        /* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    transition: filter 0.5s ease;
+}
+
+#brightness-slider {
+    width: 100%;
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img id="image" src="https://s7ap1.scene7.com/is/image/tatamotors/bookatestdrive?$TT-614-400-D$&fit=crop&fmt=webp" alt="Day and Night">
+        <input type="range" id="brightness-slider" min="0" max="100" value="50">
+    </div>
+
+    <script>
+        // script.js
+document.getElementById('brightness-slider').addEventListener('input', function() {
+    const brightnessValue = this.value;
+    document.getElementById('image').style.filter = `hue-rotate(${brightnessValue}%)`;
+    // document.getElementById('image').style.filter = `brightness(${brightnessValue}%)`;
+});
+
+    </script>
+</body>
+</html>

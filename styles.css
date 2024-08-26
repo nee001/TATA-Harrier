@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --grey-color: rgba(134, 139, 143);
+    --harrier-yellow-bg: #ffc107;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* START NAVIGATIONBAR */
+.navbar {
+    height: 80px;
+    /* max-width: 1300px; */
+    /* width: 90vw; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 50px;
+    border-bottom: 2px solid rgb(197, 194, 194);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--grey-color);
+}
+
+.list-active {
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.search-hamburger {
+    display: flex;
+    gap: 30px;
+}
+
+/* END NAVIGATIONBAR */
+
+
+
+
+/* START HERO SECTION */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-content {
+    width: 60%;
+    height: 500px;
+    position: relative;
+}
+
+.hero-content2 {
+    display: none;
+}
+
+.hero-content-txt {
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 20%;
+}
+
+.CM-color {
+    color: var(--harrier-yellow-bg);
+}
+
+.hero-bg {
+    height: 500px;
+    width: 40%;
+    background-color: var(--harrier-yellow-bg);
+    position: relative;
+}
+
+.hero-img {
+    position: absolute;
+    left: -50%;
+}
+
+.hero-img img {
+    width: 100%;
+}
+
+.product-booking {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.product-booking a {
+    color: royalblue;
+}
+
+/* END HERO SECTION */
+
+
+
+/* START PRICE SECTION */
+.price-section {
+    width: 100%;
+    background: #333;
+    color: #fff;
+}
+
+.price-showroom {
+    padding: 30px 100px;
+}
+
+.showroom-intro {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-btn {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+
+}
+
+.price {
+    width: 200px;
+}
+
+.price h2 {
+    font-size: 40px;
+}
+
+.price-btn .btn {
+    width: 150px;
+    border: 2px solid #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* END PRICE SECTION */
+
+
+/* START DESIGN SECTION */
+
+
+.harrier-design,
+.harrier-safty,
+.harrier-ADAS,
+.harrier-performance,
+.harrier-TD {
+    gap: 50px;
+}
+
+/* END DESIGN SECTION */
+
+
+
+/* START CARD DYA OR NIGHT LOOKS */
+.car-DN-look {
+    display: flex;
+    justify-content: center;
+}
+
+.car-DN-look img {
+    width: 90%;
+}
+#brightness-slider {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* END CARD DYA OR NIGHT LOOKS */
+
+
+
+/* START HARRIER SAFTY */
+
+/* END HARRIER SAFTY */
+
+
+
+/* START FOOTER SECTION */
+.footer {
+    padding: 100px 100px;
+    justify-content: space-between;
+}
+
+/* END FOOTER SECTION */
+
+/* START REQUEST BUTTON */
+.msg-button {
+    position: absolute;
+    right: 100px;
+    bottom: 80px;
+    position: fixed;
+}
+.circle{
+    height: 50px;
+    width: 50px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid royalblue;
+}
+.msg-button svg{
+    height: 34px;
+    width: 34px;
+    color: royalblue;
+    /* fill: #fff; */
+}
+
+
+.comunicate-btns {
+    background-color: royalblue;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+}
+
+.request-callback {
+    width: 40%;
+    border-right: 2px solid #fff;
+    text-align: center;
+    padding: 10px;
+    align-items: center;
+    /* height: 50px; */
+}
+
+.request-testDrive {
+    width: 40%;
+    text-align: center;
+    padding: 10px;
+    /* height: 50px; */
+}
+
+.request {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+/* END REQUEST BUTTON */
+
+
+
+@media (max-width: 1000px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .search-hamburger {
+        display: flex;
+    }
+
+    .hero-bg,
+    .hero-content {
+        height: 400px;
+    }
+
+    .hero-img {
+        display: flex;
+        align-items: center;
+        top: 10%;
+    }
+
+    .price-showroom {
+        padding: 30px 50px;
+    }
+
+    .showroom-intro h2 {
+        font-size: 25px;
+    }
+
+    .price-btn {
+        gap: 5%;
+    }
+
+    .price-btn .btn {
+        width: 100px;
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .harrier-design,
+    .harrier-safty,
+    .harrier-ADAS,
+    .harrier-performance,
+    .harrier-TD {
+        padding: 0 30px;
+        gap: 30px;
+    }
+
+    .msg-button {
+        right: 90px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .search-hamburger {
+        display: flex;
+    }
+
+    .hero-section {
+        flex-direction: column;
+    }
+
+    .hero-content {
+        display: none;
+    }
+
+    .hero-content2 {
+        width: 100%;
+        height: 450px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-content-txt {
+        width: 85%;
+        margin-top: 30%;
+
+    }
+
+    .hero-bg {
+        width: 100%;
+        height: 300px;
+    }
+
+    .hero-img {
+        display: block;
+        left: 0;
+        top: 30%;
+    }
+
+    .product-booking {
+        display: block;
+    }
+
+    .product-booking a {
+        justify-content: center;
+        display: flex;
+        margin-left: -20px;
+    }
+
+
+    .showroom-intro {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .price-btn {
+        flex-direction: column;
+        width: 100%;
+        align-items: start;
+    }
+
+    .price-btn .btn {
+        width: 100%;
+    }
+
+    .harrier-design,
+    .harrier-safty,
+    .harrier-ADAS,
+    .harrier-performance,
+    .harrier-TD {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .msg-button {
+        right: 70px;
+    }
+
+}
+
+
+@media (max-width: 530px) {
+    .hero-bg {
+        height: 250px;
+    }
+
+    .hero-img {
+        top: 42%;
+    }
+
+    .hero-content-txt {
+        margin-left: 5px;
+    }
+
+    .harrier-video {
+        display: flex;
+        justify-content: center;
+    }
+
+    .harrier-video iframe {
+        width: 90vw;
+        height: 300px;
+    }
+    .msg-button {
+        right: 50px;
+    }
+}

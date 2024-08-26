@@ -1,0 +1,140 @@
+.bg-black{
+    background: #333;
+    color: #fff;
+}
+.heading1{
+    font-size: 3.5vw;
+}
+
+.section{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1250px;
+    height: auto;
+}
+.center{
+    align-items: center;
+}
+.flex{
+    display: flex;
+}
+
+/* START TEXT CLASES */
+.category{
+    text-align: center;
+}
+.category-title{
+    text-align: center;
+    font-size: 35px;
+}
+.category-para{
+    text-align: center;
+    padding: 0 50px;
+}
+.harrier-info-title{
+    font-size: 35px;
+    line-height: 1.2;
+}
+/* END TEXT CLASES */
+
+.harrier-info{
+    padding: 50px 0;
+}
+.harrier-img img{
+    height: 400px;
+    width: 600px;
+}
+
+/* START MARGIN CLASSES */
+.mt-s{
+    margin-top: 10px;
+}
+.mt-l{
+    margin-top: 20px;
+}
+.mt-xl{
+    margin-top: 40px;
+}
+/* START MARGIN CLASSES */
+
+
+/* START BUTTON CLASSES */
+.border-btn{
+    border: 2px solid royalblue;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 5px;
+    color: royalblue;
+    font-weight: 700;
+    line-height: 1;
+}
+/* END BUTTON CLASSES */
+
+
+
+
+
+/* RESPONSIVE CLASSES */
+@media (max-width: 1000px) {
+    .mt-s{
+        margin-top: 5px;
+    }
+    .mt-l{
+        margin-top: 10px;
+    }
+    .mt-xl{
+        margin-top: 20px;
+    }
+    .harrier-info{
+        padding: 30px 0;
+    }
+    .harrier-info-title{
+        font-size: 22px;
+        line-height: 1.2;
+    }
+    .harrier-img img{
+        max-height: 300px;
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .border-btn{
+        width: 90%
+    }
+    .harrier-info{
+        order: 1;
+    }
+    .harrier-img{
+        order: 2;
+    }
+    .harrier-safty, .harrier-performance{
+        gap: 10px;
+    }
+    .harrier-safty, .harrier-img{
+        order: 1;
+        margin-top: 20px;
+    }
+    .harrier-safty, .harrier-info{
+        order: 2
+    }
+}
+
+@media (max-width: 530px) {
+.harrier-img img{
+    width: 90vw;
+    height: auto;
+}
+.harrier-info{
+    padding: 10px 0;
+}
+.harrier-info-title{
+    font-size: 18px;
+    line-height: 1.2;
+}
+.harrier-info-para{
+    font-size: 14px;
+    line-height: 1.2;
+}
+}
